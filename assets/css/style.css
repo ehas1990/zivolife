@@ -8,7 +8,12 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+.header-top h6 {
 
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  font-family: 'Neue Haas Grotesk Display Pro !important';
+}
 html, body, .site-wrapper {
   height: 100%;
 }
@@ -19,6 +24,37 @@ html, body, .site-wrapper {
     mix-blend-mode: darken;
 
 }
+.single-prodcut-feature ul {
+  column-count: 3;
+  margin-top: 5px;
+}
+.single-prodcut-feature li {
+  font-family: Neue Haas Grotesk Display Pro;
+  font-weight: 600;
+  font-size: 16.44px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-top: 10px;
+}
+i.fa.fa-check-circle-o {
+  color: #1F3D0C;
+}
+ul.single-product-bounce {
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+}
+ul.single-product-bounce li {
+  width: 150px;
+  border: 1px dashed #000;
+  padding: 10px;
+}
+img.single-prodcut-rate {
+  height: 60px;
+  aspect-ratio: 12/12;
+  object-fit: cover;
+}
+
 .single-product {
   margin-left:15px;
   background: beige;
@@ -756,8 +792,7 @@ img.g_img {
   justify-self: center;
 }
 .btn {
-  background-color: #2e84e3;
-  color: #ffffff;
+
   font-size: 16px;
   line-height: 12px;
   height: 45px;
@@ -769,6 +804,73 @@ img.g_img {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   width: 94%;
+}
+button.btn.btn-price {
+  background-color: #EFEFEF;
+  color: #000000;
+  font-size: 13px;
+  line-height: 12px;
+  height: 45px;
+  font-weight: 700;
+  margin-top: -36%;
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif !important;
+  width: 117px;
+  text-align: center;
+  position: relative;
+  border-radius: 120px;
+}
+button.btn.btn-price:hover {
+  background-color: #1F3D0C;
+  color: #FFFFFF;
+  font-size: 13px;
+  line-height: 12px;
+  height: 45px;
+  font-weight: 700;
+  margin-top: -36%;
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif !important;
+  width: 117px;
+  text-align: center;
+  position: relative;
+  border-radius: 120px;
+}
+.single-prodcut-box h4 {
+  font-family: Darker Grotesque;
+  font-weight: 700;
+  font-size: 24.95px;
+  line-height: 37.8px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+.single-prodcut-box h3 span {
+  font-family: Neue Haas Grotesk Display Pro;
+  font-weight: 500;
+  font-size: 14.59px;
+  line-height: 37.8px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: line-through;
+  color: #A5A5A5;
+  
+}
+.single-prodcut-box h3  {
+  font-family: Darker Grotesque;
+  font-weight: 700;
+  font-size: 25.01px;
+  line-height: 17.12px;
+  letter-spacing: 0%;
+  text-align: center;
+  
+  color: #000000;
+  
+}
+.single-prodcut-box {
+  display: block;
+  text-align: center;
+  place-content: center;
+  place-items: center;
 }
 .btn:focus {
   -webkit-box-shadow: none;
@@ -4946,8 +5048,9 @@ a.popup-img {
   color: #202020;
   font-size: 15px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #e5e5e5;
+
 }
+
 
 .review-link {
   font-size: 14px;
@@ -5369,7 +5472,7 @@ a.popup-img {
 .dec-and-review-menu > li > a {
   height: auto;
   line-height: 50px;
-  padding: 0 40px;
+  padding: 0 5px;
   border: 0;
   display: block;
   font-size: 16px;
@@ -5378,16 +5481,15 @@ a.popup-img {
   background: #f0f0f0;
   font-weight: 600;
   color: #333333;
+  background: #fffefe;
 }
-.dec-and-review-menu > li > a.active, .dec-and-review-menu > li > a:hover {
-  background-color: #2e84e3;
-  color: #ffffff;
+.dec-and-review-menu > li > a.active {
+  background-color: #A3A3A3;
+  color: #000000;
 }
-
 
 .product-review-content-tab {
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
+
   padding: 48px 0 45px;
   float: left;
   font-size: 14px;
@@ -8391,3 +8493,574 @@ h2.entry-title:before {
     text-align: center !important;
   }
 }
+/*  */
+@media only screen 
+  and (min-device-width: 210px) 
+  and (max-device-width:320px)
+{
+  span.product-price {
+    font-weight: 700;
+    font-family: 'Darker Grotesque';
+    font-size: 13px !important;
+    text-transform: uppercase;
+}
+  span.product-sm-text {
+    font-weight: 500;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 11px !important;
+}
+  .dec-and-review-menu > li > a {
+    height: auto;
+    line-height: 50px;
+    padding: 0 5px;
+    border: 0;
+    display: block;
+    font-size: 9px !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #f0f0f0;
+    font-weight: 600;
+    color: #333333;
+    background: #fffefe;
+}
+  .dec-and-review-menu > li {
+    margin-bottom: 10px;
+    margin-right: 0;
+    text-align: center;
+    display: flex !important;
+    width: 50% !important;
+}
+  img.single-prodcut-rate {
+    height: 50px !important;
+    aspect-ratio: 12/12;
+    object-fit: cover;
+}
+  .single-prodcut-box h3 span {
+    font-family: Neue Haas Grotesk Display Pro;
+    font-weight: 500;
+    font-size: 10.59px !important;
+    line-height: 37.8px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: line-through;
+    color: #A5A5A5;
+}
+  .single-prodcut-box h4 {
+    font-family: Darker Grotesque;
+    font-weight: 700;
+    font-size: 15.95px !important;
+    line-height: 37.8px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+  ul.single-product-bounce li {
+    width: 81px;
+    border: 1px dashed #000;
+    padding: 0px !important;
+}
+  .form input {
+    background: #0000;
+    border: 2px solid #ffffff;
+    border-radius: 100px;
+    padding: 10px;
+    width: 50%;
+}
+.privacy {
+  border: 1px solid #ffffff;
+  padding: 5px;
+  width: 100%;
+  margin-top: 30px;
+}
+  .row.mt2 {
+    margin-top: 20%;
+}
+  .icon-check, .icon-closs {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    justify-items: baseline;
+    justify-self: baseline;
+    align-content: center;
+    align-items: baseline;
+    align-self: center;
+}
+  h4.text-black {
+    width: 239px;
+    font-size: 27px;
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+  .row.reverse {
+    flex-direction: column-reverse;
+}
+  .section-wrapper span {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    color: #1F3D0C;
+    font-size: 16px !important;
+    font-weight: 400;
+}
+img.g_img {
+  height: 523px;
+  object-fit: contain;
+  aspect-ratio: 12 / 12;
+}
+h4.text-black-primary {
+  width: 261px;
+  font-size: 30px;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1F3D0C;
+  text-align: center;
+}
+.img-backed {
+  height: 420px;
+  object-fit: contain;
+}
+.col-xl-6.col-lg-6.col-md-6.col-sm-12.col-12.gap {
+  margin-top: 20%;
+}
+.single-product {
+  margin-left: 11px;
+  background: beige;
+  width: 290px;
+}
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+{
+  span.product-price {
+    font-weight: 700;
+    font-family: 'Darker Grotesque';
+    font-size: 13px !important;
+    text-transform: uppercase;
+}
+  span.product-sm-text {
+    font-weight: 500;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 11px !important;
+}
+  .single-prodcut-feature li {
+    font-family: Neue Haas Grotesk Display Pro;
+    font-weight: 600;
+    font-size: 6.44px !important;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 0px !important;
+}
+  .single-product-price {
+    color: #333333;
+    font-size: 14px !important;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+  .dec-and-review-menu > li > a {
+    height: auto;
+    line-height: 50px;
+    padding: 0 5px;
+    border: 0;
+    display: block;
+    font-size: 9px !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #f0f0f0;
+    font-weight: 600;
+    color: #333333;
+    background: #fffefe;
+}
+  .dec-and-review-menu > li {
+    margin-bottom: 10px;
+    margin-right: 0;
+    text-align: center;
+    display: flex !important;
+    width: 50% !important;
+}
+  button.btn.btn-price {
+    background-color: #EFEFEF;
+    color: #000000;
+    font-size: 13px;
+    line-height: 12px;
+    height: 45px;
+    font-weight: 700;
+    margin-top: -36%;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif !important;
+    width: 77px !important;
+    text-align: center;
+    position: relative;
+    border-radius: 120px;
+}
+  img.single-prodcut-rate {
+    height: 50px !important;
+    aspect-ratio: 12/12;
+    object-fit: cover;
+}
+  .single-prodcut-box h3 span {
+    font-family: Neue Haas Grotesk Display Pro;
+    font-weight: 500;
+    font-size: 10.59px !important;
+    line-height: 37.8px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: line-through;
+    color: #A5A5A5;
+}
+  .single-prodcut-box h3 {
+    font-family: Darker Grotesque;
+    font-weight: 700;
+    font-size: 16.01px !important;
+    line-height: 17.12px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000;
+}
+  .single-prodcut-box h4 {
+    font-family: Darker Grotesque;
+    font-weight: 700;
+    font-size: 15.95px !important;
+    line-height: 37.8px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+  ul.single-product-bounce li {
+    width: 81px;
+    border: 1px dashed #000;
+    padding: 0px !important;
+}
+  .form input {
+    background: #0000;
+    border: 2px solid #ffffff;
+    border-radius: 100px;
+    padding: 10px;
+    width: 50%;
+}
+.privacy {
+  border: 1px solid #ffffff;
+  padding: 5px;
+  width: 100%;
+  margin-top: 30px;
+}
+  .row.mt2 {
+    margin-top: 20%;
+}
+  .icon-check, .icon-closs {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    justify-items: baseline;
+    justify-self: baseline;
+    align-content: center;
+    align-items: baseline;
+    align-self: center;
+}
+  h4.text-black {
+    width: 239px;
+    font-size: 27px;
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+  .row.reverse {
+    flex-direction: column-reverse;
+}
+.single-product {
+  margin-left: 11px;
+  background: beige;
+  width: 300px;
+}
+  .section-wrapper span {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    color: #1F3D0C;
+    font-size: 16px !important;
+    font-weight: 400;
+}
+img.g_img {
+  height: 523px;
+  object-fit: contain;
+
+}
+h4.text-black-primary {
+  width: 261px;
+  font-size: 30px;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1F3D0C;
+  text-align: center;
+}
+.img-backed {
+  height: 420px;
+  object-fit: contain;
+}
+.col-xl-6.col-lg-6.col-md-6.col-sm-12.col-12.gap {
+  margin-top: 20%;
+}
+.blog-wrap-left {
+  width: 34%;
+}
+.blog-wrap-right {
+  width: 30%;
+}
+.terms {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  justify-items: center;
+  justify-self: end;
+  text-align: end;
+}
+}
+@media only screen 
+  and (min-device-width:480px) 
+  and (max-device-width:620px)
+{
+  .single-product-price {
+    color: #333333;
+    font-size: 14px !important;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+  button.btn.btn-price {
+    background-color: #EFEFEF;
+    color: #000000;
+    font-size: 10px !important;
+    line-height: 12px;
+    height: 45px;
+    font-weight: 700;
+    margin-top: -36%;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif !important;
+    width: 65px !important;
+    text-align: center;
+    position: relative;
+    border-radius: 120px;
+}
+  .single-prodcut-box h3 {
+    font-family: Darker Grotesque;
+    font-weight: 700;
+    font-size: 16.01px !important;
+    line-height: 17.12px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000;
+}
+  .terms {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    justify-items: center;
+    justify-self: end;
+    text-align: end;
+}
+  .form input {
+    background: #0000;
+    border: 2px solid #ffffff;
+    border-radius: 100px;
+    padding: 10px;
+    width: 50%;
+}
+.privacy {
+  border: 1px solid #ffffff;
+  padding: 5px;
+  width: 100%;
+  margin-top: 30px;
+}
+  .row.mt2 {
+    margin-top: 20%;
+}
+  .col-xl-6.col-lg-6.col-md-6.col-sm-12.col-12.gap {
+    margin-top: 20%;
+}
+  .icon-check, .icon-closs {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    justify-items: baseline;
+    justify-self: baseline;
+    align-content: center;
+    align-items: baseline;
+    align-self: center;
+}
+  .img-backed {
+    height: 420px;
+    object-fit: contain;
+}
+  h4.text-black {
+    width: 239px;
+    font-size: 27px;
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+  .row.reverse {
+    flex-direction: column-reverse;
+}
+h4.text-black-primary {
+  width: 261px;
+  font-size: 30px;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1F3D0C;
+  text-align: center;
+}
+}
+@media only screen 
+  and (min-device-width:620px) 
+  and (max-device-width:720px)
+  {
+    .blog-wrap-left {
+      width: 100%;
+  }
+  }
+@media only screen 
+  and (min-device-width:720px) 
+  and (max-device-width:820px)
+  {
+    .blog-wrap-left {
+      width: 100%;
+  }
+    .privacy {
+      border: 1px solid #ffffff;
+      padding: 5px;
+      width: 99%;
+      margin-top: 30px;
+  }
+  .col-right h3 {
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1F3D0C;
+    font-size: 20px;
+}
+.col-wrapper {
+  background: #FDFBF3;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  margin: 13px;
+}
+.col-right p {
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #000000;
+}
+.col-wrapper {
+  background: #FDFBF3;
+  display: flex;
+  width: 106%;
+  padding: 20px;
+  margin: 13px;
+}
+.section-wrapper span {
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+  color: #1F3D0C;
+  font-size: 14px !important;
+  font-weight: 400;
+}
+h4.text-black {
+  width: 433px !important;
+  font-size: 38px !important;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+span.product-price {
+  font-weight: 700;
+  font-family: 'Darker Grotesque';
+  font-size: 21px !important;
+  text-transform: uppercase;
+}
+.terms {
+  width: 76%;
+  display: flex;
+  justify-content: end;
+  justify-items: center;
+  justify-self: end;
+  text-align: end;
+}
+}
+@media only screen 
+  and (min-device-width:820px) 
+  and (max-device-width:1200px)
+  {
+    .blog-wrap-left {
+      width: 41%;
+  }
+    .terms {
+      width: 76%;
+      display: flex;
+      justify-content: end;
+      justify-items: center;
+      justify-self: end;
+      text-align: end;
+  }
+    span.product-price {
+      font-weight: 700;
+      font-family: 'Darker Grotesque';
+      font-size: 21px !important;
+      text-transform: uppercase;
+  }
+    h4.text-black {
+      width: 433px !important;
+      font-size: 38px !important;
+      font-family: "Darker Grotesque", sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .privacy {
+      border: 1px solid #ffffff;
+      padding: 5px;
+      width: 99%;
+      margin-top: 30px;
+  }
+
+  .col-right h3 {
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1F3D0C;
+    font-size: 20px;
+}
+.col-wrapper {
+  background: #FDFBF3;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  margin: 13px;
+}
+.col-right p {
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #000000;
+}
+.col-wrapper {
+  background: #FDFBF3;
+  display: flex;
+  width: 106%;
+  padding: 20px;
+  margin: 13px;
+}
+}
+@media only screen 
+  and (min-device-width:1200px) 
+  and (max-device-width:1600px)
+  {
+    .blog-wrap-left {
+      width: 41%;
+  }
+  .row.mt2 {
+    margin-top: 4%;
+}
+  }
